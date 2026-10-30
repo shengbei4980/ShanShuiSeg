@@ -1,0 +1,4 @@
+# Install PyTorch 1.12.1 and mmcv-full 1.6.2 first; see README.md.
+numpy==1.24.4
+Pillow==10.4.0
+mmsegmentation==0.30.0
