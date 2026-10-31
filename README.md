@@ -84,3 +84,7 @@ model/
 
 The model and package-specific inference code are provided for non-commercial research or evaluation under the NVIDIA SegFormer license. See [LICENSE](model/LICENSE) for the full terms and third-party notices.
 
+
+## Supplementary data
+
+The processed datasets for 5,915 Chinese landscape-painting images are available in [data/](data/). They include C1-C4 spatial-expression classifications, English visual evidence and classification justifications, and landscape-element segmentation counts and area fractions. See the [data description](data/README.md) for file contents and record linkage.
