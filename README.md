@@ -88,3 +88,11 @@ The model and package-specific inference code are provided for non-commercial re
 ## Supplementary data
 
 The processed datasets for 5,915 Chinese landscape-painting images are available in [data/](data/). They include C1-C4 spatial-expression classifications, English visual evidence and classification justifications, and landscape-element segmentation counts and area fractions. See the [data description](data/README.md) for file contents and record linkage.
+
+## 验证集用途 / Validation scope
+
+ShanShuiSeg-B5 训练与性能报告中的验证集用于语义分割模型的像素级评估及模型选择，不是 LLM 的 C1–C4 编码验证集。分割验证结果不用于证明 LLM 分类或其文字解释的正确性。
+
+The validation set used during ShanShuiSeg-B5 training and performance assessment is for pixel-level semantic segmentation evaluation and model selection, not for validating LLM-based C1-C4 coding. Segmentation validation results do not establish the correctness of LLM classifications or explanations.
+
+The 5,915-image supplementary tables contain processed research data, not a segmentation validation-set manifest. The classification CSV also retains a legacy `split` field from the coding workflow; its values have a separate meaning explained in the [data description](data/README.md#validation-scope-and-the-legacy-split-field).
